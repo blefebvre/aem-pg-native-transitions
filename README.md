@@ -10,4 +10,4 @@ AEM PhoneGap app with Native Transitions
 
 ### Go
 
-http://localhost:4502/libs/mobileapps/admin/content/dashboard.html/content/phonegap/brucelefebvre/native-transitions/shell
+[http://localhost:4502/libs/mobileapps/admin/content/dashboard.html/content/phonegap/brucelefebvre/native-transitions/shell](http://localhost:4502/libs/mobileapps/admin/content/dashboard.html/content/phonegap/brucelefebvre/native-transitions/shell)
