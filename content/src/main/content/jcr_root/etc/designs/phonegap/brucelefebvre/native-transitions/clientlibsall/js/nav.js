@@ -3,12 +3,12 @@
     var inactiveViewClass = 'inactive';
     var activeViewClass = 'active';
 
-	var newParser = document.createElement('a');
+    var newParser = document.createElement('a');
 
-	window.addEventListener("hashchange", function(event) {
+    window.addEventListener("hashchange", function(event) {
 
-		newParser.href = event.newURL;
-	    var newHash = newParser.hash;
+        newParser.href = event.newURL;
+        var newHash = newParser.hash;
 
         var currentViews = document.getElementsByClassName(activeViewClass);
 
@@ -20,8 +20,8 @@
         var newView = document.getElementById(newHash.substring(1));
         newView.className = activeViewClass;
 
-	    console.log('newHash: [' + newHash + ']');
-	}, true);
+        console.log('newHash: [' + newHash + ']');
+    }, true);
 
 })(window, document);
 
