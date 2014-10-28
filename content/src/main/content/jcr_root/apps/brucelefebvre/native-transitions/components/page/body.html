@@ -1,0 +1,26 @@
+<body onload='initHashchange()' data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}">
+	<div class='pages'>
+        <div id='${ currentPage.path }' class='active'>
+        	<div data-sly-resource="${ currentPage.path @ selectors='page-fragment' }" data-sly-unwrap></div>
+        </div>
+        
+        <div data-sly-test='${ !wcmmode.edit && !wcmmode.design }' 
+        		data-sly-list.item='${ currentPage.listChildren }' data-sly-unwrap>
+        
+        	<div data-sly-call="${ section @ appPage=item }" data-sly-unwrap></div>
+
+        </div>
+	</div>
+
+	<meta data-sly-call="${clientLib.all @ categories='apps.brucelefebvre.native-transitions.all'}" data-sly-unwrap></meta>
+	<div data-sly-include='nav-init.html' data-sly-unwrap></div>
+	<script type="text/javascript" data-sly-use.scriptph="${ 'PageHelper' @ page=currentPage}" src="${scriptph.relativePathToRoot}cordova.js"></script>
+</body>
+
+<template data-sly-template.section="${ @ appPage }">
+			<div data-sly-use.ph="${ 'PageHelper' @ page=appPage}" data-sly-unwrap>
+				<div id='${ appPage.path }' class='inactive'>
+                    <div data-sly-resource="${ appPage.path @ selectors='page-fragment' }" data-sly-unwrap></div>
+				</div>
+			</div>
+</template>

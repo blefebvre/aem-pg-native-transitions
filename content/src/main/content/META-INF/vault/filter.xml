@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/brucelefebvre/native-transitions"/>
+    <filter root="/content/phonegap/brucelefebvre/native-transitions"/>
+    <filter root="/etc/designs/phonegap/brucelefebvre/native-transitions"/>
+    <filter root="/content/dam/brucelefebvre/native-transitions"/>
+</workspaceFilter>
