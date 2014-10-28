@@ -1,4 +1,4 @@
-<body onload='initHashchange()' data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}">
+<body data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}">
 	<div class='pages'>
         <div id='${ currentPage.path }' class='active'>
         	<div data-sly-resource="${ currentPage.path @ selectors='page-fragment' }" data-sly-unwrap></div>

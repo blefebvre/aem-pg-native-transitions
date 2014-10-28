@@ -1,16 +1,40 @@
 (function(window, document, undefined) {
 
-	var oldParser = document.createElement('a');
+    var inactiveViewClass = 'inactive';
+    var activeViewClass = 'active';
+
 	var newParser = document.createElement('a');
 
 	window.addEventListener("hashchange", function(event) {
-		oldParser.href = event.oldURL;
-	    var oldHash = oldParser.hash;
 
 		newParser.href = event.newURL;
 	    var newHash = newParser.hash;
 
-	    console.log('event.oldURL: ' + oldHash + ' event.newURL: ' + newHash);
+        var currentViews = document.getElementsByClassName(activeViewClass);
+
+        for(var i = 0; i < currentViews.length; i++) {
+            // todo: more surgical class name removal
+            currentViews.item(i).className = inactiveViewClass;
+        }
+
+        var newView = document.getElementById(newHash.substring(1));
+        newView.className = activeViewClass;
+
+	    console.log('newHash: [' + newHash + ']');
 	}, true);
 
 })(window, document);
+
+
+var nav = {};
+
+document.addEventListener("deviceready", function() {
+
+    nav.go = function(hash) {
+        console.log('firing nativepagetransitions.slide with hash: [' + hash + ']');
+        window.plugins.nativepagetransitions.slide({
+            "href" : hash
+        });
+    };
+
+});

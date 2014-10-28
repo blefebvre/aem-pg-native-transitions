@@ -1,3 +1,4 @@
 #base=js
 
+ios7-shim.js
 nav.js

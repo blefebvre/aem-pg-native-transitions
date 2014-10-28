@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/phonegap/brucelefebvre/native-transitions"
+        cq:lastModified="{Date}2014-10-28T00:15:41.563-04:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/brucelefebvre/native-transitions/templates/page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Page 3"
+        sling:resourceType="brucelefebvre/native-transitions/components/page">
+        <content-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <link
+                jcr:created="{Date}2014-10-28T00:15:24.439-04:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2014-10-28T00:15:41.558-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="brucelefebvre/native-transitions/components/link"
+                label="Back to the first page"
+                linkPath="/content/phonegap/brucelefebvre/native-transitions/en"/>
+        </content-par>
+    </jcr:content>
+</jcr:root>

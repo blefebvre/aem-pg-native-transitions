@@ -11,7 +11,10 @@
         pge-type="[app-instance]"
         phonegap-build-exportTemplate="/content/phonegap/brucelefebvre/native-transitions/shell/jcr:content/pge-app/native-transitions"
         phonegap-build-exportTemplate-dev="/content/phonegap/brucelefebvre/native-transitions/shell/jcr:content/pge-app/native-transitions-dev"
-        phonegap-exportTemplate="/content/phonegap/brucelefebvre/native-transitions/shell/jcr:content/pge-app/app-config">
+        phonegap-exportTemplate="/content/phonegap/brucelefebvre/native-transitions/shell/jcr:content/pge-app/app-config"
+        screenshots="[]"
+        serverURL="http://localhost:4503/"
+        widgetConfigPath="/content/phonegap/brucelefebvre/native-transitions/shell/jcr:content/pge-app/app-content/phonegap/www/config.xml">
         <image
             jcr:lastModified="{Date}2014-09-04T16:49:51.263-04:00"
             jcr:lastModifiedBy="admin"

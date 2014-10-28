@@ -1,3 +1,7 @@
+body, html {
+    height: 100%;
+}
+
 .ios7 .bar-header {
 	height: 64px;
 }
@@ -11,6 +15,6 @@
 	top: 64px;
 }
 
-.ios7 .snap-drawers {
-	margin-top: 20px;
+.inactive {
+    display: none;
 }

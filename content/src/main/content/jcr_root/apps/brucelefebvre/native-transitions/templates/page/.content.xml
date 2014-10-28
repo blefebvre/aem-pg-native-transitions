@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
-    jcr:description="Template for building Ionic PhoneGap pages"
     jcr:primaryType="cq:Template"
-    jcr:title="Ionic PhoneGap page"
+    jcr:title="Native transition page"
+    allowedChildren="/apps/brucelefebvre/native-transitions/templates/page"
     allowedPaths="[/content/phonegap(/.*)?]"
-    ranking="{Long}-3">
+    ranking="{Long}0">
     <jcr:content
         cq:designPath="/etc/designs/phonegap/brucelefebvre/native-transitions"
         jcr:primaryType="cq:PageContent"
-        sling:resourceType="brucelefebvre/native-transitions/templates/page"
-        page-transition="slide-animation"/>
+        sling:resourceType="brucelefebvre/native-transitions/components/page"/>
 </jcr:root>
